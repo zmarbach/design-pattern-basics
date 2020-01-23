@@ -16,7 +16,7 @@ public class ObserverA implements Observer {
         System.out.println(this.toString() + " confirms it has received update. New int value is : " + o.toString());
 
     }
-    
+
     @Override
     public String toString() {
         return "ObserverA";
