@@ -8,13 +8,11 @@ public class Main {
         boolean observerPatterExample = true;
 
         if(observerPatterExample){
-            ObserverA observerA = new ObserverA();
-            ObserverB observerB = new ObserverB();
             Subject subject = new Subject();
 
-            //observer register with subject
-            subject.addObserver(observerA);
-            subject.addObserver(observerB);
+            //create observers and pass in subject they want to observe (constructor code will add them as observers to the subject)
+            new ObserverA(subject);
+            new ObserverB(subject);
 
             //subject data changes and automatically updates all observers...triggering their souts (reporting the changed number)
             subject.changeUnstableInt();
