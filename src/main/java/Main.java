@@ -9,11 +9,13 @@ import StrategyPattern.UseGadgets;
 public class Main {
 
     public static void main(String[] args) {
-        boolean observerPatterExample = false;
-        boolean strategyPatternExample = true;
+        boolean observer = false;
+        boolean strategy = false;
+        boolean decorator = true;
 
         //OBSERVER - main SUBJECT class keeps track of data and notifies OBSERVERS when data changes
-        if(observerPatterExample){
+        if(observer){
+            System.out.println("---------- OBSERVER PATTERN ----------");
             Subject subject = new Subject();
 
             //create observers and pass in subject they want to observe (constructor code will add them as observers to the subject)
@@ -26,7 +28,8 @@ public class Main {
 
         //STRATEGY - code to an INTERFACE so can easily change method behavior at runtime, by using different IMPLEMENTATION of that interface
         //like services cuz can use any implementation of that service interface anywhere in the app...FLEXIBLE!!
-        if (strategyPatternExample){
+        if (strategy){
+            System.out.println("---------- STRATEGY PATTERN ----------");
             System.out.println();
             System.out.println("SpiderMan does the following...isn't it cool how he can perform so many powers w/o changing the code?!");
             System.out.println("--------------------------");
@@ -39,6 +42,9 @@ public class Main {
             spiderMan.performSuperPower();
         }
 
+        if(decorator){
+            System.out.println("---------- DECORATOR PATTERN ----------");
+        }
 
     }
 }
