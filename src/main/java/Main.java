@@ -1,8 +1,8 @@
 import DecoratorPattern.BaseCoffee;
-import DecoratorPattern.decorators.CoffeeWithCaramel;
-import DecoratorPattern.decorators.CoffeeWithEspresso;
-import DecoratorPattern.decorators.CoffeeWithVanilla;
-import DecoratorPattern.decorators.CoffeeWithWhippedCream;
+import DecoratorPattern.decorators.CaramelDecorator;
+import DecoratorPattern.decorators.EspressoDecorator;
+import DecoratorPattern.decorators.VanillaDecorator;
+import DecoratorPattern.decorators.WhippedCreamDecorator;
 import ObserverPattern.ObserverA;
 import ObserverPattern.ObserverB;
 import ObserverPattern.Subject;
@@ -57,13 +57,13 @@ public class Main {
             var baseCoffee1 = new BaseCoffee();
             System.out.println("            Poured base coffee");
             System.out.println("            ***cost = " + baseCoffee1.getCost());
-            var withVanilla = new CoffeeWithVanilla(baseCoffee1);
+            var vanillaDecorator = new VanillaDecorator(baseCoffee1);
             System.out.println("            added vanilla");
-            System.out.println("            ***cost = " + withVanilla.getCost());
-            var withVanillaAndEspresso = new CoffeeWithEspresso(withVanilla);
+            System.out.println("            ***cost = " + vanillaDecorator.getCost());
+            var espressoDecorator = new EspressoDecorator(vanillaDecorator);
             System.out.println("            added 1st espresso shot");
-            System.out.println("            ***cost = " + withVanillaAndEspresso.getCost());
-            System.out.println("            Final Ingredients : " + withVanillaAndEspresso.getIngredients().toString());
+            System.out.println("            ***cost = " + espressoDecorator.getCost());
+            System.out.println("            Final Ingredients : " + espressoDecorator.getIngredients().toString());
 
             System.out.println("_______________________________________________");
 
@@ -73,16 +73,16 @@ public class Main {
             var baseCoffee2 = new BaseCoffee();
             System.out.println("            Poured base coffee");
             System.out.println("            ***cost = " + baseCoffee2.getCost());
-            var withEspresso = new CoffeeWithEspresso(baseCoffee2);
+            var espressoDecorator1 = new EspressoDecorator(baseCoffee2);
             System.out.println("            added espresso");
-            System.out.println("            ***cost = " + withEspresso.getCost());
-            var withEspressoAndCaramel = new CoffeeWithCaramel(withEspresso);
+            System.out.println("            ***cost = " + espressoDecorator1.getCost());
+            var caramelDecorator = new CaramelDecorator(espressoDecorator1);
             System.out.println("            added caramel");
-            System.out.println("            ***cost = " + withEspressoAndCaramel.getCost());
-            var withEspressoAndCaramelAndWhippedCream = new CoffeeWithWhippedCream(withEspressoAndCaramel);
+            System.out.println("            ***cost = " + caramelDecorator.getCost());
+            var whippedCreamDecorator = new WhippedCreamDecorator(caramelDecorator);
             System.out.println("            added whipped cream");
-            System.out.println("            ***cost = " + withEspressoAndCaramelAndWhippedCream.getCost());
-            System.out.println("            Final Ingredients : " + withEspressoAndCaramelAndWhippedCream.getIngredients().toString());
+            System.out.println("            ***cost = " + whippedCreamDecorator.getCost());
+            System.out.println("            Final Ingredients : " + whippedCreamDecorator.getIngredients().toString());
 
             System.out.println("_______________________________________________");
 
@@ -91,22 +91,22 @@ public class Main {
             var baseCoffee3 = new BaseCoffee();
             System.out.println("            Poured base coffee");
             System.out.println("            ***cost = " + baseCoffee3.getCost());
-            var withVanilla2 = new CoffeeWithVanilla(baseCoffee3);
+            var vanillaDecorator1 = new VanillaDecorator(baseCoffee3);
             System.out.println("            added vanilla");
-            System.out.println("            ***cost = " + withVanilla2.getCost());
-            var withVanillaAndCaramel = new CoffeeWithCaramel(withVanilla2);
+            System.out.println("            ***cost = " + vanillaDecorator1.getCost());
+            var caramelDecorator1 = new CaramelDecorator(vanillaDecorator1);
             System.out.println("            added caramel");
-            System.out.println("            ***cost = " + withVanillaAndCaramel.getCost());
-            var withVanillaAndCaramelAndEspresso1 = new CoffeeWithEspresso(withVanillaAndCaramel);
+            System.out.println("            ***cost = " + caramelDecorator1.getCost());
+            var espressoDecorator2 = new EspressoDecorator(caramelDecorator1);
             System.out.println("            added 1st espresso");
-            System.out.println("            ***cost = " + withVanillaAndCaramelAndEspresso1.getCost());
-            var withVanillaAndCaramelAndEspresso2 = new CoffeeWithEspresso(withVanillaAndCaramelAndEspresso1);
+            System.out.println("            ***cost = " + espressoDecorator2.getCost());
+            var espressoDecorator3 = new EspressoDecorator(espressoDecorator2);
             System.out.println("            added 2nd espresso");
-            System.out.println("            ***cost = " + withVanillaAndCaramelAndEspresso2.getCost());
-            var allOfIt = new CoffeeWithWhippedCream(withVanillaAndCaramelAndEspresso2);
+            System.out.println("            ***cost = " + espressoDecorator3.getCost());
+            var whippedCreamDecorator1 = new WhippedCreamDecorator(espressoDecorator3);
             System.out.println("            added whipped cream");
-            System.out.println("            ***cost = " + allOfIt.getCost());
-            System.out.println("            Final Ingredients : " + allOfIt.getIngredients().toString());
+            System.out.println("            ***cost = " + whippedCreamDecorator1.getCost());
+            System.out.println("            Final Ingredients : " + whippedCreamDecorator1.getIngredients().toString());
 
             System.out.println("_______________________________________________");
         }

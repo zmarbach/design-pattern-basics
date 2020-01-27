@@ -5,13 +5,13 @@ import DecoratorPattern.Coffee;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CoffeeWithCaramel implements Coffee {
+public class CaramelDecorator implements Coffee {
     private Coffee decoratedCoffee;
     private Double cost = 0.50;
     private List<String> ingredients = new ArrayList<>();
 
     //decorating the existing coffee with Espresso
-    public CoffeeWithCaramel(Coffee baseCoffee) {
+    public CaramelDecorator(Coffee baseCoffee) {
         this.decoratedCoffee = baseCoffee;
         //add cost for espresso
         cost += baseCoffee.getCost();
