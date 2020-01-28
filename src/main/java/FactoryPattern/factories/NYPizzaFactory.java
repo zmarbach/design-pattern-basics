@@ -7,6 +7,6 @@ public class NYPizzaFactory implements IPizzaFactory {
 
     public IPizza makePizza() {
         System.out.println("NY factory is making pizza");
-        return new NYPizza("thin");
+        return new NYPizza();
     }
 }

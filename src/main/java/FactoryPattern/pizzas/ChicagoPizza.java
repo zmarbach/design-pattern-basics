@@ -1,13 +1,10 @@
 package FactoryPattern.pizzas;
 
 public class ChicagoPizza implements IPizza {
-    private final String crust;
+    private final String THICK_CRUST = "THICK";
 
-    public ChicagoPizza(String crust) {
-        this.crust = crust;
-    }
 
     public String getCrust() {
-        return crust;
+        return THICK_CRUST;
     }
 }
