@@ -3,6 +3,12 @@ import DecoratorPattern.decorators.CaramelDecorator;
 import DecoratorPattern.decorators.EspressoDecorator;
 import DecoratorPattern.decorators.VanillaDecorator;
 import DecoratorPattern.decorators.WhippedCreamDecorator;
+import FactoryPattern.factories.ChicagoPizzaFactory;
+import FactoryPattern.factories.IPizzaFactory;
+import FactoryPattern.factories.NYPizzaFactory;
+import FactoryPattern.restaurants.ChicagoRestaurant;
+import FactoryPattern.restaurants.IRestaurant;
+import FactoryPattern.restaurants.NYRestaurant;
 import ObserverPattern.ObserverA;
 import ObserverPattern.ObserverB;
 import ObserverPattern.Subject;
@@ -16,7 +22,8 @@ public class Main {
     public static void main(String[] args) {
         boolean observer = false;
         boolean strategy = false;
-        boolean decorator = true;
+        boolean decorator = false;
+        boolean factory = true;
 
         //OBSERVER - main SUBJECT class keeps track of data and notifies OBSERVERS when data changes
         if(observer){
@@ -47,6 +54,29 @@ public class Main {
             spiderMan.performSuperPower();
         }
 
+        //FACTORY - abstract out the NEWing up of objects to one place, rather than having a class NEW and USE the object
+        if(factory){
+            System.out.println("---------- FACTORY PATTERN ----------");
+
+            System.out.println("customer orders NY style pizza from NY restaurant");
+            IRestaurant nyRestaurant = new NYRestaurant(new NYPizzaFactory());
+            nyRestaurant.orderPizza();
+            System.out.println("-----------------------------------------");
+
+            System.out.println("customer orders Chicago style pizza from Chicago restaurant");
+            IRestaurant chicagoRestaurant = new ChicagoRestaurant(new ChicagoPizzaFactory());
+            chicagoRestaurant.orderPizza();
+            System.out.println("-----------------------------------------");
+
+            System.out.println("customer orders NY style pizza from CHICAGO restaurant....gasp! Weird, but we can still do it cuz we coded to an interface");
+            IRestaurant chicagoRestaurant1 = new ChicagoRestaurant(new NYPizzaFactory());
+            chicagoRestaurant1.orderPizza();
+            System.out.println("-----------------------------------------");
+
+        }
+
+        //DECORATOR - useful when have multiple combinations of options.
+        //Dont write unique class for each combo...write class for each option and then just "decorate" a base class with the different options to create each combo
         if(decorator){
             System.out.println("---------- DECORATOR PATTERN ----------");
             System.out.println("Similar to Builder patter. Dont have to write class for every possible combo of coffee ingredients.");
@@ -110,6 +140,8 @@ public class Main {
 
             System.out.println("_______________________________________________");
         }
+
+
     }
 }
 
