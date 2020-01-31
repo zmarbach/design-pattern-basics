@@ -4,7 +4,6 @@ import DecoratorPattern.decorators.EspressoDecorator;
 import DecoratorPattern.decorators.VanillaDecorator;
 import DecoratorPattern.decorators.WhippedCreamDecorator;
 import FactoryPattern.factories.ChicagoPizzaFactory;
-import FactoryPattern.factories.IPizzaFactory;
 import FactoryPattern.factories.NYPizzaFactory;
 import FactoryPattern.restaurants.ChicagoRestaurant;
 import FactoryPattern.restaurants.IRestaurant;
@@ -12,6 +11,7 @@ import FactoryPattern.restaurants.NYRestaurant;
 import ObserverPattern.ObserverA;
 import ObserverPattern.ObserverB;
 import ObserverPattern.Subject;
+import SingletonPattern.CacheSingleton;
 import StrategyPattern.ExtremeStrength;
 import StrategyPattern.SpiderMan;
 import StrategyPattern.SpiderWebs;
@@ -23,7 +23,8 @@ public class Main {
         boolean observer = false;
         boolean strategy = false;
         boolean decorator = false;
-        boolean factory = true;
+        boolean factory = false;
+        boolean singleton = true;
 
         //OBSERVER - main SUBJECT class keeps track of data and notifies OBSERVERS when data changes
         if(observer){
@@ -141,7 +142,26 @@ public class Main {
             System.out.println("_______________________________________________");
         }
 
+        //ONE and ONLY ONE instance of a class and entire app has global access to it
+            //great for classes that you need to remain consistent (counting site viewers, cache history, etc)
+        if(singleton){
+            System.out.println("-------- SINGLETON ----------");
+            //create first instance
+            var cacheSingleton1 = CacheSingleton.getInstance();
+            //add data
+            cacheSingleton1.addDataToCache("red");
+            cacheSingleton1.addDataToCache("blue");
 
+            //get instance
+            var cacheSingleton2 = CacheSingleton.getInstance();
+            //add data
+            cacheSingleton2.addDataToCache("green");
+            cacheSingleton2.addDataToCache("yellow");
+
+            //both of these should be the same because pointing to same instance
+            System.out.println("Version 1 data: " + cacheSingleton1.getCacheData());
+            System.out.println("Version 2 data: " + cacheSingleton2.getCacheData());
+        }
     }
 }
 
