@@ -2,10 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ddb1d75-fa0f-4cf7-9cf7-2ec8926d9172" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/SingletonPattern/CacheSingleton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/CommandPattern/RemoteControl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/CommandPattern/commandObjs/Command.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/CommandPattern/commandObjs/FanHighCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/CommandPattern/commandObjs/FanLowCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/CommandPattern/commandObjs/FanMediumCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/CommandPattern/commandObjs/FanOffCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/CommandPattern/commandObjs/GarageDoorCloseCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/CommandPattern/commandObjs/GarageDoorOpenCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/CommandPattern/commandObjs/LightOffCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/CommandPattern/commandObjs/LightOnCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/CommandPattern/executionObjs/Fan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/CommandPattern/executionObjs/GarageDoor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/CommandPattern/executionObjs/LightBulb.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/SingletonPattern/CacheSingleton.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SingletonPattern/CacheSingleton.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +64,7 @@
       <recent name="ObserverPattern" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="CommandPattern" />
       <recent name="DecoratorPattern" />
       <recent name="StrategyPattern" />
     </key>
@@ -95,10 +109,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="638" y="246" key="#com.intellij.ide.util.MemberChooser" timestamp="1580490384548">
+    <state x="638" y="246" key="#com.intellij.ide.util.MemberChooser" timestamp="1580504352808">
       <screen x="0" y="0" width="1664" height="1069" />
     </state>
-    <state x="638" y="246" key="#com.intellij.ide.util.MemberChooser/0.0.1664.1069/-1920.0.1920.1040@0.0.1664.1069" timestamp="1580490384548" />
+    <state x="638" y="246" key="#com.intellij.ide.util.MemberChooser/0.0.1664.1069/-1920.0.1920.1040@0.0.1664.1069" timestamp="1580504352808" />
     <state x="533" y="462" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1579809922296">
       <screen x="0" y="0" width="1664" height="1069" />
     </state>
@@ -115,22 +129,22 @@
       <screen x="0" y="0" width="1664" height="1069" />
     </state>
     <state x="563" y="283" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1664.1069/-1920.0.1920.1040@0.0.1664.1069" timestamp="1580159854814" />
-    <state width="1611" height="267" key="GridCell.Tab.0.bottom" timestamp="1580490891364">
+    <state width="1611" height="267" key="GridCell.Tab.0.bottom" timestamp="1580504879165">
       <screen x="0" y="0" width="1664" height="1069" />
     </state>
-    <state width="1611" height="267" key="GridCell.Tab.0.bottom/0.0.1664.1069/-1920.0.1920.1040@0.0.1664.1069" timestamp="1580490891364" />
-    <state width="1611" height="267" key="GridCell.Tab.0.center" timestamp="1580490891364">
+    <state width="1611" height="267" key="GridCell.Tab.0.bottom/0.0.1664.1069/-1920.0.1920.1040@0.0.1664.1069" timestamp="1580504879165" />
+    <state width="1611" height="267" key="GridCell.Tab.0.center" timestamp="1580504879165">
       <screen x="0" y="0" width="1664" height="1069" />
     </state>
-    <state width="1611" height="267" key="GridCell.Tab.0.center/0.0.1664.1069/-1920.0.1920.1040@0.0.1664.1069" timestamp="1580490891364" />
-    <state width="1611" height="267" key="GridCell.Tab.0.left" timestamp="1580490891364">
+    <state width="1611" height="267" key="GridCell.Tab.0.center/0.0.1664.1069/-1920.0.1920.1040@0.0.1664.1069" timestamp="1580504879165" />
+    <state width="1611" height="267" key="GridCell.Tab.0.left" timestamp="1580504879165">
       <screen x="0" y="0" width="1664" height="1069" />
     </state>
-    <state width="1611" height="267" key="GridCell.Tab.0.left/0.0.1664.1069/-1920.0.1920.1040@0.0.1664.1069" timestamp="1580490891364" />
-    <state width="1611" height="267" key="GridCell.Tab.0.right" timestamp="1580490891364">
+    <state width="1611" height="267" key="GridCell.Tab.0.left/0.0.1664.1069/-1920.0.1920.1040@0.0.1664.1069" timestamp="1580504879165" />
+    <state width="1611" height="267" key="GridCell.Tab.0.right" timestamp="1580504879165">
       <screen x="0" y="0" width="1664" height="1069" />
     </state>
-    <state width="1611" height="267" key="GridCell.Tab.0.right/0.0.1664.1069/-1920.0.1920.1040@0.0.1664.1069" timestamp="1580490891364" />
+    <state width="1611" height="267" key="GridCell.Tab.0.right/0.0.1664.1069/-1920.0.1920.1040@0.0.1664.1069" timestamp="1580504879165" />
     <state x="529" y="361" key="com.intellij.ide.util.TipDialog" timestamp="1580140297120">
       <screen x="0" y="0" width="1664" height="1069" />
     </state>
