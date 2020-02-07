@@ -248,6 +248,7 @@ public class Main {
             }
         }
 
+        //similar to ADAPTER - mapping bad APIs to using a custom interface that makes more sense (naming, types, etc)
         if(facade){
             System.out.println("-------- FACADE ----------");
             AccurateTempService accurateTempService = new AccurateTempServiceImpl();
