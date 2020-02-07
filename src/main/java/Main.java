@@ -1,3 +1,8 @@
+import AdapterPattern.WeatherBug;
+import AdapterPattern.WeatherChannel;
+import AdapterPattern.WeatherSource;
+import AdapterPattern.adapters.WeatherBugAdapter;
+import AdapterPattern.adapters.WeatherChannelAdapter;
 import CommandPattern.commandObjs.*;
 import CommandPattern.executionObjs.Fan;
 import CommandPattern.executionObjs.GarageDoor;
@@ -22,6 +27,9 @@ import StrategyPattern.SpiderMan;
 import StrategyPattern.SpiderWebs;
 import StrategyPattern.UseGadgets;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -30,7 +38,8 @@ public class Main {
         boolean decorator = false;
         boolean factory = false;
         boolean singleton = false;
-        boolean command = true;
+        boolean command = false;
+        boolean adapter = true;
 
         //OBSERVER - main SUBJECT class keeps track of data and notifies OBSERVERS when data changes
         if(observer){
@@ -209,6 +218,29 @@ public class Main {
             remoteControl.setButton(fanLowCommand);
             remoteControl.pressExecuteButton();
             remoteControl.pressUndoButton();
+        }
+
+        //use interface to map common methods to specific methods of different implementation classes
+        //Weather example - dont have to worry about what each weather service calls its methods or what TYPE it returns
+        //use ADAPTER class to map maintain consistency - call same method and get same TYPE result no matter the service
+        if(adapter){
+            WeatherBug weatherBug = new WeatherBug(100, "C");
+            WeatherSource weatherBugAdapter = new WeatherBugAdapter(weatherBug);
+
+            WeatherChannel weatherChannel = new WeatherChannel("56 F");
+            WeatherSource weatherChannelAdapter = new WeatherChannelAdapter(weatherChannel);
+
+            List<WeatherSource> weatherSources = new ArrayList<>();
+            weatherSources.add(weatherBugAdapter);
+            weatherSources.add(weatherChannelAdapter);
+
+            //can CALL same method on ALL sources and will get same TYPE result you expect because of ADAPTER
+            for(var source : weatherSources) {
+                System.out.println(" ---------- " + source.toString() + " ---------- ");
+                System.out.println("Temp: " + source.getTemperature());
+                System.out.println("High: " + source.getHigh());
+                System.out.println("Low: " + source.getLow());
+            }
         }
     }
 }
