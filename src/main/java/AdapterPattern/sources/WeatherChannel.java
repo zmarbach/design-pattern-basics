@@ -1,4 +1,4 @@
-package AdapterPattern;
+package AdapterPattern.sources;
 
 public class WeatherChannel {
     private String tempWithDegree;

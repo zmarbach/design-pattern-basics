@@ -1,7 +1,7 @@
 package AdapterPattern.adapters;
 
-import AdapterPattern.WeatherChannel;
-import AdapterPattern.WeatherSource;
+import AdapterPattern.sources.WeatherChannel;
+import AdapterPattern.sources.WeatherSource;
 
 public class WeatherChannelAdapter implements WeatherSource {
 

@@ -1,6 +1,6 @@
-import AdapterPattern.WeatherBug;
-import AdapterPattern.WeatherChannel;
-import AdapterPattern.WeatherSource;
+import AdapterPattern.sources.WeatherBug;
+import AdapterPattern.sources.WeatherChannel;
+import AdapterPattern.sources.WeatherSource;
 import AdapterPattern.adapters.WeatherBugAdapter;
 import AdapterPattern.adapters.WeatherChannelAdapter;
 import CommandPattern.commandObjs.*;
@@ -13,6 +13,9 @@ import DecoratorPattern.decorators.CaramelDecorator;
 import DecoratorPattern.decorators.EspressoDecorator;
 import DecoratorPattern.decorators.VanillaDecorator;
 import DecoratorPattern.decorators.WhippedCreamDecorator;
+import FacadePattern.CustomAPI.CustomAPI;
+import FacadePattern.CustomAPI.CustomFacade;
+import FacadePattern.ThirdPartyAPIs.*;
 import FactoryPattern.factories.ChicagoPizzaFactory;
 import FactoryPattern.factories.NYPizzaFactory;
 import FactoryPattern.restaurants.ChicagoRestaurant;
@@ -39,7 +42,8 @@ public class Main {
         boolean factory = false;
         boolean singleton = false;
         boolean command = false;
-        boolean adapter = true;
+        boolean adapter = false;
+        boolean facade = true;
 
         //OBSERVER - main SUBJECT class keeps track of data and notifies OBSERVERS when data changes
         if(observer){
@@ -224,6 +228,7 @@ public class Main {
         //Weather example - dont have to worry about what each weather service calls its methods or what TYPE it returns
         //use ADAPTER class to map maintain consistency - call same method and get same TYPE result no matter the service
         if(adapter){
+            System.out.println("-------- ADAPTER ----------");
             WeatherBug weatherBug = new WeatherBug(100, "C");
             WeatherSource weatherBugAdapter = new WeatherBugAdapter(weatherBug);
 
@@ -241,6 +246,22 @@ public class Main {
                 System.out.println("High: " + source.getHigh());
                 System.out.println("Low: " + source.getLow());
             }
+        }
+
+        if(facade){
+            System.out.println("-------- FACADE ----------");
+            AccurateTempService accurateTempService = new AccurateTempServiceImpl();
+            AccuratePressureService accuratePressureService = new AccuratePressureServiceImpl();
+            AccurateHumidityService accurateHumidityService = new AccurateHumidityServiceImpl();
+            CustomAPI customAPI = new CustomFacade(accurateHumidityService, accuratePressureService, accurateTempService);
+
+            //use ONE customAPI with consistent methods to interact with 3 different third party APIs
+            //makes easier for us to remember and can write clearer method names if third party methods are confusing
+            System.out.println(customAPI.getTemp());
+            System.out.println(customAPI.getHumidity());
+            System.out.println(customAPI.getPressure());
+
+
         }
     }
 }

@@ -1,7 +1,7 @@
 package AdapterPattern.adapters;
 
-import AdapterPattern.WeatherBug;
-import AdapterPattern.WeatherSource;
+import AdapterPattern.sources.WeatherBug;
+import AdapterPattern.sources.WeatherSource;
 
 public class WeatherBugAdapter implements WeatherSource {
 
