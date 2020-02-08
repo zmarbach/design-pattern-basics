@@ -2,64 +2,71 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ddb1d75-fa0f-4cf7-9cf7-2ec8926d9172" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/designpatterns/AdapterPattern/AdapterMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/designpatterns/CommandPattern/CommandMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/designpatterns/DecoratorPattern/DecoratorMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/designpatterns/FacadePattern/FacadeMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/designpatterns/FactoryPattern/FactoryMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/designpatterns/ObserverPattern/ObserverMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/designpatterns/ParentMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/designpatterns/SingletonPattern/SingletonMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/designpatterns/StrategyPattern/StrategyMain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AdapterPattern/adapters/WeatherBugAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/designpatterns/AdapterPattern/adapters/WeatherBugAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AdapterPattern/adapters/WeatherChannelAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/designpatterns/AdapterPattern/adapters/WeatherChannelAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AdapterPattern/sources/WeatherBug.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/designpatterns/AdapterPattern/sources/WeatherBug.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AdapterPattern/sources/WeatherChannel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/designpatterns/AdapterPattern/sources/WeatherChannel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AdapterPattern/sources/WeatherSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/designpatterns/AdapterPattern/sources/WeatherSource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CommandPattern/RemoteControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/designpatterns/CommandPattern/RemoteControl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CommandPattern/commandObjs/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/designpatterns/CommandPattern/commandObjs/Command.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CommandPattern/commandObjs/FanHighCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/designpatterns/CommandPattern/commandObjs/FanHighCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CommandPattern/commandObjs/FanLowCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/designpatterns/CommandPattern/commandObjs/FanLowCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CommandPattern/commandObjs/FanMediumCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/designpatterns/CommandPattern/commandObjs/FanMediumCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CommandPattern/commandObjs/FanOffCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/designpatterns/CommandPattern/commandObjs/FanOffCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CommandPattern/commandObjs/GarageDoorCloseCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/designpatterns/CommandPattern/commandObjs/GarageDoorCloseCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CommandPattern/commandObjs/GarageDoorOpenCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/designpatterns/CommandPattern/commandObjs/GarageDoorOpenCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CommandPattern/commandObjs/LightOffCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/designpatterns/CommandPattern/commandObjs/LightOffCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CommandPattern/commandObjs/LightOnCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/designpatterns/CommandPattern/commandObjs/LightOnCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CommandPattern/executionObjs/Fan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/designpatterns/CommandPattern/executionObjs/Fan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CommandPattern/executionObjs/GarageDoor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/designpatterns/CommandPattern/executionObjs/GarageDoor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CommandPattern/executionObjs/LightBulb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/designpatterns/CommandPattern/executionObjs/LightBulb.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DecoratorPattern/BaseCoffee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/designpatterns/DecoratorPattern/BaseCoffee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DecoratorPattern/Coffee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/designpatterns/DecoratorPattern/Coffee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DecoratorPattern/decorators/CaramelDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/designpatterns/DecoratorPattern/decorators/CaramelDecorator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DecoratorPattern/decorators/EspressoDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/designpatterns/DecoratorPattern/decorators/EspressoDecorator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DecoratorPattern/decorators/VanillaDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/designpatterns/DecoratorPattern/decorators/VanillaDecorator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DecoratorPattern/decorators/WhippedCreamDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/designpatterns/DecoratorPattern/decorators/WhippedCreamDecorator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FacadePattern/CustomAPI/CustomAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/designpatterns/FacadePattern/CustomAPI/CustomAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FacadePattern/CustomAPI/CustomFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/designpatterns/FacadePattern/CustomAPI/CustomFacade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FacadePattern/ThirdPartyAPIs/AccurateHumidityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/designpatterns/FacadePattern/ThirdPartyAPIs/AccurateHumidityService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FacadePattern/ThirdPartyAPIs/AccurateHumidityServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/designpatterns/FacadePattern/ThirdPartyAPIs/AccurateHumidityServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FacadePattern/ThirdPartyAPIs/AccuratePressureService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/designpatterns/FacadePattern/ThirdPartyAPIs/AccuratePressureService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FacadePattern/ThirdPartyAPIs/AccuratePressureServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/designpatterns/FacadePattern/ThirdPartyAPIs/AccuratePressureServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FacadePattern/ThirdPartyAPIs/AccurateTempService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/designpatterns/FacadePattern/ThirdPartyAPIs/AccurateTempService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FacadePattern/ThirdPartyAPIs/AccurateTempServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/designpatterns/FacadePattern/ThirdPartyAPIs/AccurateTempServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FactoryPattern/factories/ChicagoPizzaFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/designpatterns/FactoryPattern/factories/ChicagoPizzaFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FactoryPattern/factories/IPizzaFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/designpatterns/FactoryPattern/factories/IPizzaFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FactoryPattern/factories/NYPizzaFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/designpatterns/FactoryPattern/factories/NYPizzaFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FactoryPattern/pizzas/ChicagoPizza.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/designpatterns/FactoryPattern/pizzas/ChicagoPizza.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FactoryPattern/pizzas/IPizza.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/designpatterns/FactoryPattern/pizzas/IPizza.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FactoryPattern/pizzas/NYPizza.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/designpatterns/FactoryPattern/pizzas/NYPizza.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FactoryPattern/restaurants/ChicagoRestaurant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/designpatterns/FactoryPattern/restaurants/ChicagoRestaurant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FactoryPattern/restaurants/IRestaurant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/designpatterns/FactoryPattern/restaurants/IRestaurant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FactoryPattern/restaurants/NYRestaurant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/designpatterns/FactoryPattern/restaurants/NYRestaurant.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/AdapterPattern/adapters/WeatherBugAdapter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/AdapterPattern/adapters/WeatherChannelAdapter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/AdapterPattern/sources/WeatherBug.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/AdapterPattern/sources/WeatherChannel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/AdapterPattern/sources/WeatherSource.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CommandPattern/RemoteControl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CommandPattern/commandObjs/Command.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CommandPattern/commandObjs/FanHighCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CommandPattern/commandObjs/FanLowCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CommandPattern/commandObjs/FanMediumCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CommandPattern/commandObjs/FanOffCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CommandPattern/commandObjs/GarageDoorCloseCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CommandPattern/commandObjs/GarageDoorOpenCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CommandPattern/commandObjs/LightOffCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CommandPattern/commandObjs/LightOnCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CommandPattern/executionObjs/Fan.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CommandPattern/executionObjs/GarageDoor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CommandPattern/executionObjs/LightBulb.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/DecoratorPattern/BaseCoffee.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/DecoratorPattern/Coffee.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/DecoratorPattern/decorators/CaramelDecorator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/DecoratorPattern/decorators/EspressoDecorator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/DecoratorPattern/decorators/VanillaDecorator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/DecoratorPattern/decorators/WhippedCreamDecorator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/FacadePattern/CustomAPI/CustomAPI.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/FacadePattern/CustomAPI/CustomFacade.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/FacadePattern/ThirdPartyAPIs/AccurateHumidityService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/FacadePattern/ThirdPartyAPIs/AccurateHumidityServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/FacadePattern/ThirdPartyAPIs/AccuratePressureService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/FacadePattern/ThirdPartyAPIs/AccuratePressureServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/FacadePattern/ThirdPartyAPIs/AccurateTempService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/FacadePattern/ThirdPartyAPIs/AccurateTempServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/FactoryPattern/factories/ChicagoPizzaFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/FactoryPattern/factories/IPizzaFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/FactoryPattern/factories/NYPizzaFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/FactoryPattern/pizzas/ChicagoPizza.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/FactoryPattern/pizzas/IPizza.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/FactoryPattern/pizzas/NYPizza.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/FactoryPattern/restaurants/ChicagoRestaurant.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/FactoryPattern/restaurants/IRestaurant.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/FactoryPattern/restaurants/NYRestaurant.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/design-pattern-basics.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ObserverPattern/ObserverA.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ObserverPattern/ObserverB.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ObserverPattern/Subject.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SingletonPattern/CacheSingleton.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/StrategyPattern/Batman.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/StrategyPattern/ExtremeStrength.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/StrategyPattern/SpiderMan.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/StrategyPattern/SpiderWebs.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/StrategyPattern/SuperHeroInterface.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/StrategyPattern/SuperMan.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/StrategyPattern/SuperPowerInterface.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/StrategyPattern/UseGadgets.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ObserverPattern/ObserverA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/designpatterns/ObserverPattern/ObserverA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ObserverPattern/ObserverB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/designpatterns/ObserverPattern/ObserverB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ObserverPattern/Subject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/designpatterns/ObserverPattern/Subject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SingletonPattern/CacheSingleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/designpatterns/SingletonPattern/CacheSingleton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/StrategyPattern/Batman.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/designpatterns/StrategyPattern/Batman.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/StrategyPattern/ExtremeStrength.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/designpatterns/StrategyPattern/ExtremeStrength.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/StrategyPattern/SpiderMan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/designpatterns/StrategyPattern/SpiderMan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/StrategyPattern/SpiderWebs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/designpatterns/StrategyPattern/SpiderWebs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/StrategyPattern/SuperHeroInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/designpatterns/StrategyPattern/SuperHeroInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/StrategyPattern/SuperMan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/designpatterns/StrategyPattern/SuperMan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/StrategyPattern/SuperPowerInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/designpatterns/StrategyPattern/SuperPowerInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/StrategyPattern/UseGadgets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/designpatterns/StrategyPattern/UseGadgets.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,10 +106,10 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/FacadePattern/ThirdPartyAPIs" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -164,15 +171,17 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="638" y="246" key="#com.intellij.ide.util.MemberChooser" timestamp="1581091912000">
+    <state x="638" y="246" key="#com.intellij.ide.util.MemberChooser" timestamp="1581195589919">
       <screen x="0" y="0" width="1664" height="1069" />
     </state>
     <state x="638" y="246" key="#com.intellij.ide.util.MemberChooser/0.0.1664.1069/-1920.0.1920.1040@0.0.1664.1069" timestamp="1580504352808" />
     <state x="638" y="246" key="#com.intellij.ide.util.MemberChooser/0.0.1664.1069/570.-1080.1920.1040@0.0.1664.1069" timestamp="1581091912000" />
-    <state x="533" y="462" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1579809922296">
+    <state x="638" y="246" key="#com.intellij.ide.util.MemberChooser/0.0.1664.1069@0.0.1664.1069" timestamp="1581195589919" />
+    <state x="533" y="462" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1581193320044">
       <screen x="0" y="0" width="1664" height="1069" />
     </state>
     <state x="533" y="462" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1664.1069/-1920.0.1920.1040@0.0.1664.1069" timestamp="1579809922296" />
+    <state x="533" y="462" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1664.1069@0.0.1664.1069" timestamp="1581193320044" />
     <state x="630" y="417" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1579809914808">
       <screen x="0" y="0" width="1664" height="1069" />
     </state>
@@ -185,31 +194,51 @@
       <screen x="0" y="0" width="1664" height="1069" />
     </state>
     <state x="563" y="283" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1664.1069/-1920.0.1920.1040@0.0.1664.1069" timestamp="1580159854814" />
-    <state width="1609" height="265" key="GridCell.Tab.0.bottom" timestamp="1581093670197">
+    <state width="1609" height="249" key="GridCell.Tab.0.bottom" timestamp="1581198010183">
       <screen x="0" y="0" width="1664" height="1069" />
     </state>
     <state width="1611" height="267" key="GridCell.Tab.0.bottom/0.0.1664.1069/-1920.0.1920.1040@0.0.1664.1069" timestamp="1580504879165" />
     <state width="1609" height="265" key="GridCell.Tab.0.bottom/0.0.1664.1069/570.-1080.1920.1040@0.0.1664.1069" timestamp="1581093670197" />
-    <state width="1609" height="265" key="GridCell.Tab.0.center" timestamp="1581093670197">
+    <state width="1609" height="249" key="GridCell.Tab.0.bottom/0.0.1664.1069@0.0.1664.1069" timestamp="1581198010183" />
+    <state width="1609" height="249" key="GridCell.Tab.0.center" timestamp="1581198010183">
       <screen x="0" y="0" width="1664" height="1069" />
     </state>
     <state width="1611" height="267" key="GridCell.Tab.0.center/0.0.1664.1069/-1920.0.1920.1040@0.0.1664.1069" timestamp="1580504879165" />
     <state width="1609" height="265" key="GridCell.Tab.0.center/0.0.1664.1069/570.-1080.1920.1040@0.0.1664.1069" timestamp="1581093670197" />
-    <state width="1609" height="265" key="GridCell.Tab.0.left" timestamp="1581093670197">
+    <state width="1609" height="249" key="GridCell.Tab.0.center/0.0.1664.1069@0.0.1664.1069" timestamp="1581198010183" />
+    <state width="1609" height="249" key="GridCell.Tab.0.left" timestamp="1581198010183">
       <screen x="0" y="0" width="1664" height="1069" />
     </state>
     <state width="1611" height="267" key="GridCell.Tab.0.left/0.0.1664.1069/-1920.0.1920.1040@0.0.1664.1069" timestamp="1580504879165" />
     <state width="1609" height="265" key="GridCell.Tab.0.left/0.0.1664.1069/570.-1080.1920.1040@0.0.1664.1069" timestamp="1581093670197" />
-    <state width="1609" height="265" key="GridCell.Tab.0.right" timestamp="1581093670197">
+    <state width="1609" height="249" key="GridCell.Tab.0.left/0.0.1664.1069@0.0.1664.1069" timestamp="1581198010183" />
+    <state width="1609" height="249" key="GridCell.Tab.0.right" timestamp="1581198010183">
       <screen x="0" y="0" width="1664" height="1069" />
     </state>
     <state width="1611" height="267" key="GridCell.Tab.0.right/0.0.1664.1069/-1920.0.1920.1040@0.0.1664.1069" timestamp="1580504879165" />
     <state width="1609" height="265" key="GridCell.Tab.0.right/0.0.1664.1069/570.-1080.1920.1040@0.0.1664.1069" timestamp="1581093670197" />
-    <state x="185" y="6" key="SettingsEditor" timestamp="1581192158286">
+    <state width="1609" height="249" key="GridCell.Tab.0.right/0.0.1664.1069@0.0.1664.1069" timestamp="1581198010183" />
+    <state width="1609" height="345" key="GridCell.Tab.1.bottom" timestamp="1581197039082">
+      <screen x="0" y="0" width="1664" height="1069" />
+    </state>
+    <state width="1609" height="345" key="GridCell.Tab.1.bottom/0.0.1664.1069@0.0.1664.1069" timestamp="1581197039082" />
+    <state width="1609" height="345" key="GridCell.Tab.1.center" timestamp="1581197039081">
+      <screen x="0" y="0" width="1664" height="1069" />
+    </state>
+    <state width="1609" height="345" key="GridCell.Tab.1.center/0.0.1664.1069@0.0.1664.1069" timestamp="1581197039081" />
+    <state width="1609" height="345" key="GridCell.Tab.1.left" timestamp="1581197039081">
+      <screen x="0" y="0" width="1664" height="1069" />
+    </state>
+    <state width="1609" height="345" key="GridCell.Tab.1.left/0.0.1664.1069@0.0.1664.1069" timestamp="1581197039081" />
+    <state width="1609" height="345" key="GridCell.Tab.1.right" timestamp="1581197039082">
+      <screen x="0" y="0" width="1664" height="1069" />
+    </state>
+    <state width="1609" height="345" key="GridCell.Tab.1.right/0.0.1664.1069@0.0.1664.1069" timestamp="1581197039082" />
+    <state x="185" y="6" key="SettingsEditor" timestamp="1581194730949">
       <screen x="0" y="0" width="1664" height="1069" />
     </state>
     <state x="185" y="6" key="SettingsEditor/0.0.1664.1069/570.-1080.1920.1040@0.0.1664.1069" timestamp="1581006795768" />
-    <state x="185" y="6" key="SettingsEditor/0.0.1664.1069@0.0.1664.1069" timestamp="1581192158286" />
+    <state x="185" y="6" key="SettingsEditor/0.0.1664.1069@0.0.1664.1069" timestamp="1581194730949" />
     <state x="529" y="361" key="com.intellij.ide.util.TipDialog" timestamp="1581191681611">
       <screen x="0" y="0" width="1664" height="1069" />
     </state>
