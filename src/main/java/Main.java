@@ -162,7 +162,7 @@ public class Main {
         }
 
         //ONE and ONLY ONE instance of a class and entire app has global access to it
-            //great for classes that you need to remain consistent (counting site viewers, cache history, etc)
+        //great for classes that you need to remain consistent (counting site viewers, cache history, etc)
         if(singleton){
             System.out.println("-------- SINGLETON ----------");
             //create first instance
@@ -225,7 +225,7 @@ public class Main {
         }
 
         //use interface to map common methods to specific methods of different implementation classes
-        //Weather example - dont have to worry about what each weather service calls its methods or what TYPE it returns
+        //Weather example - don't have to worry about what each weather service calls its methods or what TYPE it returns
         //use ADAPTER class to map maintain consistency - call same method and get same TYPE result no matter the service
         if(adapter){
             System.out.println("-------- ADAPTER ----------");
@@ -261,7 +261,6 @@ public class Main {
             System.out.println(customAPI.getTemp());
             System.out.println(customAPI.getHumidity());
             System.out.println(customAPI.getPressure());
-
 
         }
     }
