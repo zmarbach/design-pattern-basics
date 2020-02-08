@@ -9,7 +9,6 @@ import designpatterns.SingletonPattern.SingletonMain;
 import designpatterns.StrategyPattern.*;
 
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Map;
 import java.util.Scanner;
 
@@ -18,7 +17,7 @@ public class Main {
     private static String userInput;
     private static boolean loop = true;
 
-    //TODO need to add better sout messages to each PatternMain to explain what is happening
+    //TODO need to add better Sout messages to each PatternMain to explain what is happening
     public static void main(String[] args) {
         populatePatternsMap();
         System.out.println("Type appropriate number to see each design pattern in action!");
