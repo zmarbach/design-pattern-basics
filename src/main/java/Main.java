@@ -8,6 +8,7 @@ import designpatterns.ParentMain;
 import designpatterns.SingletonPattern.SingletonMain;
 import designpatterns.StrategyPattern.*;
 
+import java.io.File;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
