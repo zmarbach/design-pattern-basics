@@ -24,7 +24,9 @@ public class TemplateMethodMain extends ParentMain {
     @Override
     public void execute() {
         buildBeverageObjects();
-
+        // Template Method pattern defines skeleton of algorithm.
+        // Consistent steps are implemented by abstract class, variable steps are delegated to subclasses.
+        //EX: boilingWater is the same no matter the beverage, but how you brew the beverage changes based on the type of beverage (so let subclass handle that)
         System.out.println("---------- TEMPLATE METHOD PATTERN ----------");
         System.out.println("***Preparing coffee...");
         coffee.prepareBeverage();

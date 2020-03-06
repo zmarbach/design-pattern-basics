@@ -24,6 +24,7 @@ public abstract class CaffeinatedBeverage {
         System.out.println("Boiling water");
     }
 
+    //this changes based on type of beverage so delegate implementation to subclass
     protected abstract void brew();
 
     private void pourInCup() {

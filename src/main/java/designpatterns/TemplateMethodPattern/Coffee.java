@@ -8,6 +8,7 @@ public class Coffee extends CaffeinatedBeverage {
         super(desiredExtras);
     }
 
+    //Coffee class determines how to brew, but relies on CaffeinatedBeverage class to handle all other consistent steps
     @Override
     protected void brew() {
         System.out.println("Pouring coffee through filter.");
