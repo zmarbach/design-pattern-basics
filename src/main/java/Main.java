@@ -7,8 +7,8 @@ import designpatterns.ObserverPattern.ObserverMain;
 import designpatterns.ParentMain;
 import designpatterns.SingletonPattern.SingletonMain;
 import designpatterns.StrategyPattern.*;
+import designpatterns.TemplateMethodPattern.TemplateMethodMain;
 
-import java.io.File;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
@@ -70,6 +70,7 @@ public class Main {
         patternsMap.put(6, new ObserverMain("Observer"));
         patternsMap.put(7, new SingletonMain("Singleton"));
         patternsMap.put(8, new StrategyMain("Strategy"));
+        patternsMap.put(9, new TemplateMethodMain("Template Method"));
     }
     private static void showPatternsKeySet(){
         System.out.println("Design Patterns:");
