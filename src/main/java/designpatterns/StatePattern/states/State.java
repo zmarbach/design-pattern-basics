@@ -1,10 +1,8 @@
 package designpatterns.StatePattern.states;
 
-import designpatterns.StatePattern.Parcel;
-
 public interface State {
-    void prev(Parcel parcel);
-    void next(Parcel parcel);
+    void prev();
+    void next();
     String getStatus();
     void performActivity();
 }

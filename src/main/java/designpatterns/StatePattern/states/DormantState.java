@@ -10,13 +10,13 @@ public class DormantState implements State {
     }
 
     @Override
-    public void prev(Parcel parcel) {
+    public void prev() {
         System.out.println("You are in initial state. No previous states.");
     }
 
     @Override
-    public void next(Parcel parcel) {
-        parcel.setCurrentState(new OrderedState(parcel));
+    public void next() {
+        parcel.setCurrentState(parcel.getOrderedState());
         parcel.performActivity();
     }
 

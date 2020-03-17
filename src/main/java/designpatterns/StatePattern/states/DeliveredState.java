@@ -1,7 +1,6 @@
 package designpatterns.StatePattern.states;
 
 import designpatterns.StatePattern.Parcel;
-import designpatterns.StatePattern.states.State;
 
 public class DeliveredState implements State {
     private Parcel parcel;
@@ -11,13 +10,13 @@ public class DeliveredState implements State {
     }
 
     @Override
-    public void prev(Parcel parcel) {
+    public void prev() {
         System.out.println("Moving back one step...");
-        parcel.setCurrentState(new ShippedState(parcel));
+        parcel.setCurrentState(parcel.getShippedState());
     }
 
     @Override
-    public void next(Parcel parcel) {
+    public void next() {
         System.out.println("Item has already been delivered. No further states.");
     }
 

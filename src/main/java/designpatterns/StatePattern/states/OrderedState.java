@@ -10,14 +10,14 @@ public class OrderedState implements State {
     }
 
     @Override
-    public void prev(Parcel parcel) {
+    public void prev() {
         System.out.println("Moving back one step...");
-        parcel.setCurrentState(new DormantState(parcel));
+        parcel.setCurrentState(parcel.getDormantState());
     }
 
     @Override
-    public void next(Parcel parcel) {
-        parcel.setCurrentState(new PackedState(parcel));
+    public void next() {
+        parcel.setCurrentState(parcel.getPackedState());
         parcel.performActivity();
     }
 
