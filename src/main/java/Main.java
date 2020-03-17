@@ -6,6 +6,7 @@ import designpatterns.FactoryPattern.FactoryMain;
 import designpatterns.ObserverPattern.ObserverMain;
 import designpatterns.ParentMain;
 import designpatterns.SingletonPattern.SingletonMain;
+import designpatterns.StatePattern.states.StateMain;
 import designpatterns.StrategyPattern.*;
 import designpatterns.TemplateMethodPattern.TemplateMethodMain;
 
@@ -71,6 +72,7 @@ public class Main {
         patternsMap.put(7, new SingletonMain("Singleton"));
         patternsMap.put(8, new StrategyMain("Strategy"));
         patternsMap.put(9, new TemplateMethodMain("Template Method"));
+        patternsMap.put(10, new StateMain("State"));
     }
     private static void showPatternsKeySet(){
         System.out.println("Design Patterns:");
