@@ -1,4 +1,5 @@
 import designpatterns.AdapterPattern.AdapterMain;
+import designpatterns.BuilderPattern.BuilderMain;
 import designpatterns.CommandPattern.CommandMain;
 import designpatterns.DecoratorPattern.DecoratorMain;
 import designpatterns.FacadePattern.FacadeMain;
@@ -73,6 +74,7 @@ public class Main {
         patternsMap.put(8, new StrategyMain("Strategy"));
         patternsMap.put(9, new TemplateMethodMain("Template Method"));
         patternsMap.put(10, new StateMain("State"));
+        patternsMap.put(11, new BuilderMain("Builder"));
     }
     private static void showPatternsKeySet(){
         System.out.println("Design Patterns:");
